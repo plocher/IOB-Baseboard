@@ -7741,6 +7741,13 @@ grid 2.54 mm, diameter 6 mm</description>
 <text x="0" y="1.27" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
 <text x="-3.81" y="1.27" size="0.4064" layer="25" font="vector">&gt;NAME</text>
 </package>
+<package name="MOUNTINGHOLE">
+<hole x="0" y="0" drill="3.6"/>
+<circle x="0" y="0" radius="2.286" width="0.6096" layer="1"/>
+<circle x="0" y="0" radius="3.048" width="0.8128" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="0.8128" layer="42"/>
+<circle x="0" y="0" radius="2.286" width="0.6096" layer="16"/>
+</package>
 </packages>
 <symbols>
 <symbol name="I2C">
@@ -7947,6 +7954,13 @@ Boilerplate</text>
 <pin name="SCL" x="12.7" y="-12.7" length="middle" rot="R180"/>
 <text x="-5.08" y="17.78" size="0.8128" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-17.78" size="0.8128" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MOUNTINGHOLE">
+<circle x="0" y="0" radius="3.5921" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<text x="-10.16" y="0" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8837,6 +8851,19 @@ LM1117 uses GOI pinout</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MOUNTINGHOLE">
+<description>Mounting hole with top and bottom copper and stop rings</description>
+<gates>
+<gate name="MT1" symbol="MOUNTINGHOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOUNTINGHOLE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -8898,6 +8925,9 @@ LM1117 uses GOI pinout</description>
 <part name="U$2" library="SPCoast" deviceset="I2C-EXPANDER" device=""/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
+<part name="U$3" library="SPCoast" deviceset="MOUNTINGHOLE" device=""/>
+<part name="U$4" library="SPCoast" deviceset="MOUNTINGHOLE" device=""/>
+<part name="U$5" library="SPCoast" deviceset="MOUNTINGHOLE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8974,6 +9004,9 @@ V1.0 - New design, not impacted by I/O wiring movement unseating IOB modules</te
 <instance part="P+6" gate="VCC" x="109.22" y="157.48" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="106.68" y="157.48" size="1.778" layer="96"/>
 </instance>
+<instance part="U$3" gate="MT1" x="223.52" y="45.72"/>
+<instance part="U$4" gate="MT1" x="213.36" y="45.72"/>
+<instance part="U$5" gate="MT1" x="203.2" y="45.72"/>
 </instances>
 <busses>
 </busses>
