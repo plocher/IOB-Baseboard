@@ -9093,10 +9093,10 @@ LM1117 uses GOI pinout</description>
 <text x="152.4" y="27.94" size="3.81" layer="97">I2C generic Baseboard</text>
 <text x="152.908" y="23.876" size="2.54" layer="97">IO Expander  with IIO personality modules</text>
 <text x="152.908" y="6.35" size="3.81" layer="97">John Plocher</text>
-<text x="235.458" y="6.604" size="3.81" layer="97">1.1</text>
+<text x="235.458" y="6.604" size="3.81" layer="97">1.0</text>
 <text x="149.86" y="38.1" size="1.4224" layer="102">Changes
 V1.0 - New design, not impacted by I/O wiring movement unseating IOB modules
-V1.1 - LED dboard was a flop - connector size/cost is expensive</text>
+     - LED dboard was a flop - connector size/cost is expensive</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

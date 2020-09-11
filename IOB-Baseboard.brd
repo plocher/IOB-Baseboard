@@ -167,7 +167,7 @@
 </layers>
 <board>
 <plain>
-<text x="87.28339375" y="87.855534375" size="1.27" layer="21" rot="SR0">v1.1</text>
+<text x="87.28339375" y="87.855534375" size="1.27" layer="21" rot="SR0">v1.0</text>
 <text x="2.2548" y="40.2418" size="1.4224" layer="22" font="vector" ratio="15" rot="MR270">www. SP Coast .com</text>
 <text x="36.9627" y="83.2992" size="1.4224" layer="22" font="vector" ratio="15" rot="MR180">16 bit (4x IO4 ports)
    I2C digital I/O </text>
@@ -185,7 +185,7 @@ Digital I/O</text>
 <text x="8.128" y="79.883" size="0.8128" layer="21" rot="R180">Power</text>
 <text x="45.085" y="38.1" size="1.27" layer="21" rot="SR0">Plug-in
 IO Expander</text>
-<text x="86.01339375" y="97.380534375" size="1.27" layer="21" rot="SR0">v1.1</text>
+<text x="86.01339375" y="97.380534375" size="1.27" layer="21" rot="SR0">v1.0</text>
 <text x="85.48799375" y="95.645009375" size="1.016" layer="21">2020.09</text>
 <text x="87.63" y="45.847" size="1.27" layer="21">1</text>
 <text x="83.947" y="45.847" size="1.27" layer="21">2</text>
