@@ -4730,23 +4730,23 @@ Standard 8.5x11 US Letter frame</description>
 <rectangle x1="0.8" y1="-0.6238" x2="0.9" y2="-0.4738" layer="49" rot="R180"/>
 </package>
 <package name="0603-RES">
-<wire x1="-1.473" y1="0.6528" x2="1.473" y2="0.6528" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.6528" x2="1.473" y2="-0.6528" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.6528" x2="-1.473" y2="-0.6528" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.6528" x2="-1.473" y2="0.6528" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="0.508" x2="1.473" y2="0.508" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.508" x2="1.473" y2="-0.508" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.508" x2="-1.473" y2="-0.508" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.508" x2="-1.473" y2="0.508" width="0.0508" layer="39"/>
 <wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="49"/>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="49"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="1" x="-0.889" y="0" dx="0.8128" dy="0.8128" layer="1"/>
+<smd name="2" x="0.889" y="0" dx="0.8128" dy="0.8128" layer="1"/>
 <text x="-1.27" y="1.27" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.27" y="-1.905" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="49"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="49"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<wire x1="1.524" y1="0.635" x2="-1.524" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="0.635" x2="-1.524" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="-0.635" x2="1.524" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="1.524" y1="-0.635" x2="1.524" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.4478" y1="0.508" x2="-1.4478" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-1.4478" y1="0.508" x2="-1.4478" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-1.4478" y1="-0.508" x2="1.4478" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="1.4478" y1="-0.508" x2="1.4478" y2="0.508" width="0.127" layer="21"/>
 <wire x1="-0.1143" y1="0" x2="0.1143" y2="0.002540625" width="0.254" layer="21"/>
 </package>
 <package name="1/6W-RES">
@@ -8202,7 +8202,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 </device>
 </devices>
 </deviceset>
-<deviceset name="BOARD" prefix="BOARD">
+<deviceset name="BOARD" prefix="BOARD" uservalue="yes">
 <gates>
 <gate name="B" symbol="BOARD-DIN27X40" x="0" y="0"/>
 </gates>
@@ -9062,19 +9062,19 @@ LM1117 uses GOI pinout</description>
 </classes>
 <parts>
 <part name="FRAME1" library="MCP" deviceset="FRAME-LETTER" device=""/>
-<part name="C1" library="SPCoast" deviceset="CAP*" device="0805" value="0.1uF"/>
-<part name="C2" library="SPCoast" deviceset="CAP*" device="0805" value="10uF"/>
+<part name="C1" library="SPCoast" deviceset="CAP*" device="0603" value="0.1uF"/>
+<part name="C2" library="SPCoast" deviceset="CAP*" device="0603" value="10uF"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
-<part name="U$1" library="SparkFun" deviceset="OSHW-LOGO" device="L" value="OSHW-LOGOL"/>
+<part name="U$1" library="SparkFun" deviceset="OSHW-LOGO" device="L" value="OSHW"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
 <part name="VR1" library="SPCoast" deviceset="VREG-?-*" device="DPAK" technology="5" value="CJ7805"/>
-<part name="R18" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R18" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED18" library="SPCoast" deviceset="LED*" device="0603-LED" value="G"/>
 <part name="SUPPLY2" library="supply2" deviceset="+9V" device=""/>
 <part name="J1" library="SPCoast" deviceset="CONNECTOR-I2C" device="LEFT" value="I2C"/>
 <part name="J2" library="SPCoast" deviceset="CONNECTOR-I2C" device="LEFT" value="I2C"/>
 <part name="V12" library="supply2" deviceset="GND" device=""/>
-<part name="BOARD1" library="SPCoast" deviceset="BOARD" device="80X100-IOB" value="BOARD80X100-IOB"/>
+<part name="BOARD1" library="SPCoast" deviceset="BOARD" device="80X100-IOB" value="BOARD"/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="V9" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="+9V" device=""/>
@@ -9087,19 +9087,19 @@ LM1117 uses GOI pinout</description>
 <part name="VIN" library="SPCoast" deviceset="DOC-POWER_LABEL" device="" value="9-12VDC"/>
 <part name="VIN1" library="SPCoast" deviceset="CONNECTOR-POWER" device="-L"/>
 <part name="VIN2" library="SPCoast" deviceset="CONNECTOR-POWER" device="-L" value="CONNECTOR-POWER-L"/>
-<part name="IOB1" library="SPCoast" deviceset="CONNECTOR-IO4-IOB-V3" device=""/>
+<part name="IOB1" library="SPCoast" deviceset="CONNECTOR-IO4-IOB-V3" device="" value="CONNECTOR"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="+9V" device=""/>
-<part name="IOB2" library="SPCoast" deviceset="CONNECTOR-IO4-IOB-V3" device=""/>
+<part name="IOB2" library="SPCoast" deviceset="CONNECTOR-IO4-IOB-V3" device="" value="CONNECTOR"/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="+9V" device=""/>
-<part name="IOB3" library="SPCoast" deviceset="CONNECTOR-IO4-IOB-V3" device=""/>
+<part name="IOB3" library="SPCoast" deviceset="CONNECTOR-IO4-IOB-V3" device="" value="CONNECTOR"/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="+9V" device=""/>
-<part name="IOB4" library="SPCoast" deviceset="CONNECTOR-IO4-IOB-V3" device=""/>
+<part name="IOB4" library="SPCoast" deviceset="CONNECTOR-IO4-IOB-V3" device="" value="CONNECTOR"/>
 <part name="U$2" library="SPCoast" deviceset="CONNECTOR-I2C-EXPANDER" device=""/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
@@ -9108,13 +9108,13 @@ LM1117 uses GOI pinout</description>
 <part name="U$5" library="SPCoast" deviceset="MOUNTINGHOLE" device=""/>
 <part name="FRAME3" library="SPCoast" deviceset="DOC-FRAME-LETTER" device=""/>
 <part name="LED2" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R4" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R4" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED3" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R5" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R5" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED4" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R6" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R6" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED5" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R7" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R7" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="Q0" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
 <part name="Q1" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
 <part name="Q2" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
@@ -9128,13 +9128,13 @@ LM1117 uses GOI pinout</description>
 <part name="P+20" library="supply1" deviceset="VCC" device=""/>
 <part name="P+21" library="supply1" deviceset="VCC" device=""/>
 <part name="LED6" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R8" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R8" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED7" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R9" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R9" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED8" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R10" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R10" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED9" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R11" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R11" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="Q4" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
 <part name="Q5" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
 <part name="Q6" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
@@ -9148,13 +9148,13 @@ LM1117 uses GOI pinout</description>
 <part name="P+24" library="supply1" deviceset="VCC" device=""/>
 <part name="P+25" library="supply1" deviceset="VCC" device=""/>
 <part name="LED10" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R12" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R12" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED11" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R13" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R13" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED12" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R14" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R14" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED13" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R15" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R15" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="Q8" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
 <part name="Q9" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
 <part name="Q10" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
@@ -9168,13 +9168,13 @@ LM1117 uses GOI pinout</description>
 <part name="P+28" library="supply1" deviceset="VCC" device=""/>
 <part name="P+29" library="supply1" deviceset="VCC" device=""/>
 <part name="LED14" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R16" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R16" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED15" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R2" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R2" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED17" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R21" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R21" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="LED19" library="SPCoast" deviceset="LED*" device="0603-LED" value="Y"/>
-<part name="R22" library="SPCoast" deviceset="R*" device="0805-RES" value="2K0"/>
+<part name="R22" library="SPCoast" deviceset="R*" device="0603-RES" value="2K0"/>
 <part name="Q12" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
 <part name="Q13" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
 <part name="Q14" library="SPCoast" deviceset="MOSFET-P" device="-044021001" value="P-FET"/>
